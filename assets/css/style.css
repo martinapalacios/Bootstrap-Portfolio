@@ -11,6 +11,40 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+}
+
+/* Sticky Footer */
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* Hover Styling */
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /* Container */
@@ -78,13 +112,13 @@ h3 {
   background: #4aaaa5;
 }
 
-/* Navigation Button */
-nav {
+/* My Links */
+.links {
   float: right;
   margin-top: 25px;
 }
     
-nav a {
+.links a {
   display: inline-block;
   padding-left: 15px;
   margin-left: 15px;
@@ -94,18 +128,8 @@ nav a {
   border-left: 1px solid #efefef;
 }
 
-nav a:first-child {
+.links a:first-child {
   border-left: 0 none;
-}
-
-.nav a:hover {
-  background-color: #4aaaa5;
-  color:#777777;
-}
-    
-.nav a.active {
-  background-color: white;
-  color: white;
 }
 
 /* Footer */
@@ -222,14 +246,4 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
-}
-
-/*@media screen and (max-width: 700px){
-  .workbox{background-color: #666666}
-}*/
-
-@media screen and (max-width: 700px) {
-  body {
-    background-color: lightblue;
-  }
 }
